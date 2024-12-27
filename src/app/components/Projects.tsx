@@ -9,8 +9,8 @@ interface Project {
 
 const Projects: React.FC<{project:Project[]}> = ({project}) => {
     return (
-        <div>
-            <h1 className='text-xl text-center text-underline'>Projects</h1>
+        <div className='container mx-auto p-4'>
+            <h1 className='text-4xl text-center underline underline-offset-1 m-8 p-4'>Projects</h1>
             <p>Below are some of the clients I've collaborated with and the projects we've completed.</p>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
                 {project.map((project, index) => (
